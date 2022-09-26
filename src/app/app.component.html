@@ -1,0 +1,15 @@
+<!-- <app-elements-home></app-elements-home>showing elements-home component on screen -->
+<!-- <app-collections-home></app-collections-home>same as above -->
+
+
+<div class="ui container">
+    <div class="ui secondary pointing menu">
+        <a routerLink="/elements" routerLinkActive="active" class="item">Elements</a><!--routerLink so that no additional requests will be made tothe development server each time-->
+        <a routerLink="/collections" routerLinkActive="active" class="item">Collections</a>    
+        <a routerLink="/mods" routerLinkActive="active" class="item">Modules</a>    
+    </div>
+    <div class="ui segment">
+        <router-outlet></router-outlet><!--angular isgoing to make elements or some other component instance and going to display using this stat-->
+    </div>
+</div>
+
